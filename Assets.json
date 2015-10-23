@@ -1,0 +1,22 @@
+{
+  "main": {
+    "jst": {
+    },
+    "js": {
+      "gliders/static/js/compiled/index.js" : [
+        "gliders/static/lib/jquery/dist/jquery.js",
+        "gliders/static/lib/bootstrap/dist/js/bootstrap.js",
+        "gliders/static/lib/underscore/underscore.js"
+      ]
+    },
+    "css": {
+      "gliders/static/css/compiled/index.css" : [
+        "gliders/static/lib/bootstrap/dist/css/bootstrap.css",
+        "gliders/static/lib/font-awesome/css/font-awesome.css",
+        "gliders/static/css/main.css"
+      ]
+    }
+  }
+}
+
+

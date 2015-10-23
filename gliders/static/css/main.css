@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'KlinicSlabBold';
+  src: url("/css/fonts/KlinicSlabBold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'KlinicSlabMedium';
+  src: url("/css/fonts/KlinicSlabMedium.otf") format("opentype");
+}
+
+.navbar .navbar-brand img {
+  max-height: 46px;
+  margin-top: -14px;
+}
+
+.navbar .navbar-brand.navbar-brand-title {
+  font-family: "KlinicSlabBold";
+  font-size: 24px;
+  color:#003087;
+  margin-left: -24px;
+  margin-top: 1px;
+}
+
+#navbar-links {
+  font-family: "KlinicSlabMedium";
+  font-size: 24px;
+  color: #007396;
+  margin-top: 1px;
+}
+
+#navbar-links a {
+  color: #007396;
+}
+#navbar-links a:hover {
+  color:#003087;
+}
+
+.bad-score {
+  color: #D70834;
+}
+
+thead .tname {
+  width: 60%;
+}
+thead .tpriority {
+  width: 20%;
+}
+
+thead .tscore {
+  width: 20%;
+}
+
+thead .cname {
+  width: 25%;
+}
+
+thead .cpriority {
+  width: 5%;
+}
+
+thead .ccorrection {
+  width: 70%;
+}
+
+.table-collapse {
+  display: inline;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table-collapse a{
+  color: #333;
+}
+
+.table-collapse a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.failures {
+  display: inline;
+}
+
+.label-as-badge {
+  border-radius: 1em;
+}
+#dropbox {
+  color: #ccc;
+  border: 5px dotted #ccc;
+  margin-bottom: 20px;
+}
+
+#dropbox p {
+  margin: 20px;
+}
+
+#dropbox #dropbox-error {
+  display: none;
+}
+
+#dropbox.hovered {
+  border-color: #000;
+  color: #000;
+}
+
+#dropbox .progress {
+  display: none;
+  margin-bottom: 0px;
+}
+
+#dropbox.uploading {
+  border-color: white;
+}
+
+#dropbox.uploading .progress {
+  display: block;
+}
+
+#dropbox.uploading p {
+  display: none;
+}
+
+#url-input {
+  font-family: FontAwesome;
+}
+
+.submit-row {
+  padding-top: 15px;
+}
+

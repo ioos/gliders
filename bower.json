@@ -1,0 +1,26 @@
+{
+  "name": "gliders",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ioos/gliders",
+  "authors": [
+    "Luke Campbell <luke.s.campbell@gmail.com>"
+  ],
+  "description": "Gliders Homepage",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "font-awesome": "~4.4.0"
+  }
+}

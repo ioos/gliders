@@ -1,0 +1,31 @@
+{
+  "name": "gliders",
+  "version": "0.0.1",
+  "description": "Gliders Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ioos/gliders.git"
+  },
+  "author": "Luke Campbell <luke.campbell@rpsgroup.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ioos/gliders/issues"
+  },
+  "homepage": "https://github.com/ioos/gliders",
+  "dependencies": {
+    "bower": "^1.6.3",
+    "grunt": "^0.4.5",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jst": "^0.6.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
