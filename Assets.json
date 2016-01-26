@@ -13,7 +13,8 @@
       "gliders/static/css/compiled/index.css" : [
         "gliders/static/lib/bootstrap/dist/css/bootstrap.css",
         "gliders/static/lib/font-awesome/css/font-awesome.css",
-        "gliders/static/css/main.css"
+        "gliders/static/css/main.css",
+        "gliders/static/css/infographic.css"
       ]
     }
   }
