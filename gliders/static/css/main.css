@@ -7,9 +7,30 @@
   src: url("/css/fonts/KlinicSlabMedium.otf") format("opentype");
 }
 
+@media (max-width: 768px) {
+  header > .container-fluid {
+    display: none;
+  }
+}
+
+header > .container-fluid {
+  width: 500px;
+}
+
+  header > .container-fluid a img {
+    width: 480px;
+    margin: 10px;
+  }
+
+.navbar {
+  background-color: #003087;
+  border: none;
+  border-radius: 0;
+}
+
 .navbar .navbar-brand img {
-  max-height: 46px;
-  margin-top: -14px;
+  max-height: 42px;
+  margin-top: -11px;
 }
 
 .navbar .navbar-brand.navbar-brand-title {
@@ -20,19 +41,26 @@
   margin-top: 1px;
 }
 
-#navbar-links {
+.navbar ul li:hover {
+  background-color: #122b4d;
+}
+
+#navbar {
   font-family: "KlinicSlabMedium";
   font-size: 24px;
   color: #007396;
   margin-top: 1px;
 }
 
-#navbar-links a {
-  color: #007396;
+#navbar a {
+  color: #55D6F8;
 }
+
+/*
 #navbar-links a:hover {
   color:#003087;
 }
+*/
 
 .bad-score {
   color: #D70834;
