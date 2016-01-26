@@ -127,3 +127,12 @@ thead .ccorrection {
   padding-top: 15px;
 }
 
+#main-container .row .col-md-3.welcome {
+  margin-top: 22px;
+}
+
+@media (max-width: 992px) {
+  #main-container .row .col-md-3.welcome {
+    margin-top: 0;
+  }
+}
