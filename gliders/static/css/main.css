@@ -136,3 +136,11 @@ thead .ccorrection {
     margin-top: 0;
   }
 }
+
+#main-container .row .thumbnail .caption h3 {
+  margin-top: 5px;
+}
+
+#main-container .row .section-heading h1 {
+  margin-bottom: 25px;
+}
