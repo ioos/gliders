@@ -7,6 +7,21 @@
   src: url("/css/fonts/KlinicSlabMedium.otf") format("opentype");
 }
 
+@media (max-width: 768px) {
+  header > .container-fluid {
+    display: none;
+  }
+}
+
+header > .container-fluid {
+  width: 500px;
+}
+
+  header > .container-fluid a img {
+    width: 480px;
+    margin: 10px;
+  }
+
 .navbar {
   background-color: #003087;
   border: none;
