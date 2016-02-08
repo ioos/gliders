@@ -166,9 +166,14 @@ thead .ccorrection {
 }
 
 #main-container .row .thumbnail .caption h3 {
-  margin-top: 5px;
+  margin-top    : 5px;
+  margin-bottom : 15px;
 }
 
 #main-container .row .section-heading h1 {
   margin-bottom: 25px;
+}
+
+#main-container .thumbnail .caption .list-group:last-of-type {
+  margin-bottom: 5px;
 }
