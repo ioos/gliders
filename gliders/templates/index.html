@@ -86,105 +86,121 @@
   </div>
   <div class="row">
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>General Info</h3>
-          <div class="list-group">
-            <a href="http://www.ioos.noaa.gov/glider/welcome.html" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">IOOS Gliders Homepage</h4>
-              <p class="list-group-item-text">Summary of IOOS glider and AUV activities</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="http://www.iooc.us/" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">IOOC Glider Task Team</h4>
-              <p class="list-group-item-text">...</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">IOOS GliderDAC Benefits</h4>
-              <p class="list-group-item-text">The Glider DAC provides a number of benefits to glider operators to improve their experience with their glider data including data distribution, quality assurance, and visualization.</p>
-            </a>
-          </div>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Info</a>
+            <ul id="menu1" class="dropdown-menu" aria-labelledby="drop1">
+              <li>
+                <a href="http://www.ioos.noaa.gov/glider/welcome.html" target="_blank">IOOS Gliders Homepage</a>
+                <p>
+                  Summary of IOOS glider and AUV activities
+                </p>
+              </li>
+              <li role="separator" class="divider"><li>
+              <li>
+                <a href="http://www.iooc.us/activities/glider-tt/" target="_blank">IOOC Glider Task Team</a>
+                <p>
+                  The goals of the Interagency Ocean Observation Committee (IOOC) Glider Task Team are to enable increased engagement with the glider community and to advance the coordinated use of glider observing systems to meet global, national and regional sub-surface observing requirements.
+                <p/>
+              </li>
+              <li role="separator" class="divider"><li>
+              <li>
+                <a href="/benefits">IOOS GliderDAC Benefits</a>
+                <p>
+                  The Glider DAC provides a number of benefits to glider operators to improve their experience with their glider data including data distribution, quality assurance, and visualization.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Data Visualization &amp; Access</h3>
-          <div class="list-group">
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">Glider Assets Map</h4>
-              <p class="list-group-item-text">The Glider Assets Map displays all gliders currently available in from the GliderDAC and allows users to explore profile data.</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="http://data.ioos.us/gliders/erddap/index.html" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">ERDDAP Catalog</h4>
-              <p class="list-group-item-text">The ERDDAP Catalog provides direct access to all GliderDAC datasets and allows users to make maps and graphs.</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="http://data.ioos.us/gliders/thredds/catalog.html" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">THREDDS Catalog</h4>
-              <p class="list-group-item-text">The THREDDS catalog provide direct access to all GliderDAC datasets via DAP requests.</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="http://data.nodc.noaa.gov/geoportal/rest/find/document?searchText=NGDAC&start=1&max=25&contentOption=intersecting&f=searchPage&dojo.preventCache=1452007401768" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">NCEI Glider Archive Data</h4>
-              <p class="list-group-item-text">NCEI archives data and metadata independently of the original data providers so that it is available for use by future users.</p>
-            </a>
-          </div>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+        <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Visualization &amp; Access</a>
+          <ul id="menu2" class="dropdown-menu" aria-labelledby="drop2">
+            <li>
+              <a href="http://e.infogr.am/2008-2012-8694941?src=embed" target="_blank">Glider Metrics</a>
+              <p>
+                Infographic depicting the number of glider datas per regional association from 2008 to 2014
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://data.ioos.us/gliders/erddap/index.html" target="_blank">ERDDAP Catalog</a>
+              <p>
+                The ERDDAP Catalog provides direct access to all GliderDAC datasets and allows users to make maps and graphs.
+              <p/>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://data.ioos.us/gliders/thredds/catalog.html" target="_blank">THREDDS Catalog</a>
+              <p>
+                The THREDDS catalog provide direct access to all GliderDAC datasets via DAP requests.
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://data.nodc.noaa.gov/geoportal/rest/find/document?searchText=NGDAC&start=1&max=25&contentOption=intersecting&f=searchPage&dojo.preventCache=1452007401768" target="_blank">NCEI Glider Archive Data</a>
+              <p>
+                NCEI archives data and metadata independently of the original data providers so that it is available for use by future users.
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Documentation</h3>
-          <div class="list-group">
-            <a href="http://www.ioos.noaa.gov/glider/strategy/natl_glider_ntwrk_plan_final.pdf" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">IOOS Underwater Glider Network Plan</h4>
-              <p class="list-group-item-text">Strategy for using underwater gliders as part of a larger comprehensive three dimensional ocean, coastal, and Great Lakes observing system.</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="https://github.com/ioos/ioosngdac/wiki" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">IOOS National Glider DAV Wiki</h4>
-              <p class="list-group-item-text">A collection of documents and resources describing the NetCDF file specification, data provider registration and data set submission processes for contributing glider data sets to the GliderDAC.</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">NECI Submission Information Form for the IOOS National Glider Data Assembly Center</h4>
-              <p class="list-group-item-text">Describes process used to establish archiving of GliderDAC data with NCEI.</p>
-            </a>
-          </div>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+        <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+          <ul id="menu3" class="dropdown-menu" aria-labelledby="drop3">
+            <li>
+              <a href="http://www.ioos.noaa.gov/glider/strategy/natl_glider_ntwrk_plan_final.pdf" target="_blank">IOOS Underwater Glider Network Plan</a>
+              <p>
+                Strategy for using underwater gliders as part of a larger comprehensive three dimensional ocean, coastal, and Great Lakes observing system.
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="https://github.com/ioos/ioosngdac/wiki" target="_blank">IOOS National Glider DAV Wiki</a>
+              <p>
+                A collection of documents and resources describing the NetCDF file specification, data provider registration and data set submission processes for contributing glider data sets to the GliderDAC.
+              <p/>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="#">NECI Submission Information Form for the IOOS National Glider Data Assembly Center</a>
+              <p>
+                Describes process used to establish archiving of GliderDAC data with NCEI
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Data Providers</h3>
-          <div class="list-group">
-            <a href="http://data.ioos.us/compliance" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">IOOS Compliance Checker</h4>
-              <p class="list-group-item-text">Web-based tool to check local or remote datasets for compliance against a variety of standards, including the IOOS GliderDAC.</p>
-            </a>
-          </div>
-          <div class="list-group">
-            <a href="http://data.ioos.us/gliders/status/" class="list-group-item" target="_blank">
-              <h4 class="list-group-item-heading">GliderDAC Submission Status Page</h4>
-              <p class="list-group-item-text">Web-based tool for tracking the submission of glider data to the GliderDAC.  Provides summary of deployments, WMO IDs, number of profiles, time coverage, and data availability through ERDDAP and THREDDS.</p>
-            </a>
-          </div>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+        <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Provider Tools</a>
+          <ul id="menu4" class="dropdown-menu" aria-labelledby="drop4">
+            <li>
+              <a href="http://data.ioos.us/compliance" target="_blank">IOOS Compliance Checker</a>
+              <p>
+                Web-based tool to check local or remote datasets for compliance against a variety of standards, including the IOOS GliderDAC
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://gliders.ioos.us/status" target="_blank">GliderDAC Submission Status Page</a>
+              <p>
+                Web-based tool for tracking the submission of glider data to the GliderDAC.  Provides summary of deployments, WMO IDs, number of profiles, time coverage, and data availability through ERDDAP and THREDDS.
+              <p/>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div> <!-- row -->
 </div>
 {% endblock %}

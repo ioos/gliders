@@ -181,3 +181,32 @@ thead .ccorrection {
 #main-container .thumbnail img[alt="IOOS Gliders Map screen capture"] {
   max-width: 1140px;
 }
+
+#main-container ul.glider-resources.nav-pills > li {
+  width: 100%;
+}
+
+#main-container ul.glider-resources.nav-pills > li > a {
+  font-size : 30px;
+  border    : 1px solid #ccc;
+}
+
+#main-container ul.glider-resources.nav-pills li.dropdown.open > ul {
+  width: 100%;
+}
+
+#main-container ul.glider-resources.nav-pills li.dropdown.open > ul > li > a {
+  white-space : normal;
+}
+
+#main-container ul.glider-resources.nav-pills li.dropdown.open > ul li p {
+  font-size   : 12px;
+  margin-left : 39px;
+  color       : #868686;
+  margin-top  : 5px;
+  margin-right: 18px;
+}
+
+#main-container .row:last-of-type {
+  margin-bottom: 500px;
+}
