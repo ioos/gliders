@@ -177,3 +177,7 @@ thead .ccorrection {
 #main-container .thumbnail .caption .list-group:last-of-type {
   margin-bottom: 5px;
 }
+
+#main-container .thumbnail img[alt="IOOS Gliders Map screen capture"] {
+  max-width: 1140px;
+}
