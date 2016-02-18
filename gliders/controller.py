@@ -71,5 +71,8 @@ def show_index():
     css = load_css('main.css', 'index')
     return render_template('index.html', scripts=scripts, css=css)
 
-
-
+@api.route('/benefits')
+def show_benefits():
+    scripts = load_javascripts('main.js', 'index')
+    css = load_css('main.css', 'index')
+    return render_template('benefits.html', scripts=scripts, css=css)
