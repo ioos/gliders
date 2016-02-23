@@ -76,3 +76,9 @@ def show_benefits():
     scripts = load_javascripts('main.js', 'index')
     css = load_css('main.css', 'index')
     return render_template('benefits.html', scripts=scripts, css=css)
+
+@api.route('/metrics')
+def show_metrics():
+    scripts = load_javascripts('main.js', 'index')
+    css = load_css('main.css', 'index')
+    return render_template('metrics.html', scripts=scripts, css=css)
