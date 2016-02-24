@@ -19,20 +19,61 @@
       </div> <!-- .navbar-header -->
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
-          <li>
-            <a href='#'>
-              Gliders
-            </a>
+          <li class="dropdown">
+            <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false">Data <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="drop1">
+              <li>
+                <a href="/metrics">Metrics</a>
+              </li>
+              <li>
+                <a href="http://data.ioos.us" target="_blank">Search</a>
+              </li>
+              <li>
+                <a href="http://data.ioos.us/compliance" target="_blank">Compliance Checker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false">Viewers <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="drop2">
+              <li>
+                <a href="http://comt.ioos.us" target="_blank">COMT</a>
+              </li>
+              <li>
+                <a href="http://axiomdatascience.com/maps/ioos" target="_blank">Sensor Map</a>
+              </li>
+              <li>
+                <a href="#">EDS Viewer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false">DACs <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="drop3">
+              <li>
+                <a href="/">Glider DAC</a>
+              </li>
+              <li>
+                <a href="#">HF Radar DAC</a>
+              </li>
+              <li>
+                <a href="#">ATN DAC</a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a href="#">
-              Data Access
-            </a>
+            <a href="#">Regional Associations</a>
           </li>
-          <li>
-            <a href="#">
-              Providers
-            </a>
+          <li class="dropdown">
+            <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="drop4">
+              <li>
+                <a href="">Documents</a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
           </li>
         </ul> <!-- .nav.navbar-nav -->
       </div> <!-- .collapse.navbar-collapse -->

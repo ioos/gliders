@@ -41,8 +41,22 @@ header > .container-fluid {
   margin-top: 1px;
 }
 
-.navbar ul li:hover {
-  background-color: #122b4d;
+.navbar ul li:hover,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav .dropdown-menu {
+  background-color: #122b4d !important;
+}
+
+.navbar-default .navbar-nav .dropdown-menu li a {
+  font-size: 20px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #021A47;
+}
+
+.navbar-default .navbar-nav .dropdown-menu {
+  border: none;
 }
 
 #navbar {
