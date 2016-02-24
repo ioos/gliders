@@ -51,7 +51,7 @@ header > .container-fluid {
   font-size: 20px;
 }
 
-.dropdown-menu > li > a:hover {
+header .dropdown-menu > li > a:hover {
   background-color: #021A47;
 }
 
