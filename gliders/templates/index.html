@@ -12,47 +12,9 @@
 
 {% endblock %}
 {% block body %}
-<header>
-  <div class="container-fluid">
-    <a href="/">
-      <img src="{{url_for('.static', filename='img/IOOS_Emblem_Tertiary_B_RGB.png')}}">
-    </a>
-  </div>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img alt="Brand" alt="IOOS logo" src="{{url_for('.static', filename='img/logo-navbar.png')}}">
-        </a>
-      </div> <!-- .navbar-header -->
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href='#'>
-              Gliders
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Data Access
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Providers
-            </a>
-          </li>
-        </ul> <!-- .nav.navbar-nav -->
-      </div> <!-- .collapse.navbar-collapse -->
-    </div> <!-- .container.fluid -->
-  </nav>
-</header>
+
+{% include "header.html" %}
+
 <div id="main-container" class="container">
   <div class="row">
     <div class="col-md-3 welcome">
@@ -65,16 +27,22 @@
     <div class="col-md-9">
       <div class="caption caption-header">
         <h3>IOOS Gliders</h3>
-        <p>Gliders monitor water currents, temperature, and conditions that reveal effects from storms, impacts on fisheries, and the quality of our water. This information creates a more complete picture of what is happening in the ocean, as well as trends scientists might be able to detect. The robots collect information from deep water, as well as at the surface, at lower cost and less risk than ever before. As scientists deploy more gliders, they are revolutionizing how we observe our ocean. These robots propel us closer to that revolution.</p>
-        <p>The IOOS Regional Associations (RAs), which conduct a combination of routine, sustained, and event driven monitoring, are the main contributes to the IOOS glider presence.  The National Underwater Glider Network Map is a collaborative effort and includes current and historical glider missions dating back to 2005 from <a href="http://www.ioos.noaa.gov/regions/gcoos.html" target="_blank">Gulf of Mexico Coastal Ocean Observing System</a> (GCOOS), <a href="http://www.ioos.noaa.gov/regions/sccoos.html" target="_blank">Southern California</a> (SCCOOS), <a href="http://www.ioos.noaa.gov/regions/nanoos.html" target="_blank">Northern Pacific</a> (NANOOS), <a href="http://www.ioos.noaa.gov/regions/cencoos.html" target="_blank">Central and Northern California</a> (CeNCOOS) and <a href="http://www.ioos.noaa.gov/regions/maracoos.html" target="_blank">Mid-Atlantic</a> (MARACOOS). The gliders displayed have been funded by U.S. IOOS, NOAA, ONR, NSF, EPA, various universities, state agencies and industries.</p>
+        <p>
+          The mission of the Glider DAC is to provide glider operators with a simple process for submitting  glider data sets to a centralized location, enabling the data to be visualized, analyzed, widely distributed via existing web services and the Global Telecommunications System (GTS) and archived at the National Centers for Environmental Information (NCEI).
+        </p>
+        <p>
+          As scientists deploy more gliders, they are revolutionizing how we observe our ocean. This data creates a more complete picture of what is happening in the ocean, especially below the surface. The robots collect information by profiling the water from the surface to deep water, at lower cost and less risk than ever before. Currently, the IOOS Regional Associations (RAs), which conduct a combination of routine, sustained, and event driven monitoring, are the main contributors to the IOOS glider DAC.  The IOOS Underwater Glider Network Map is a collaborative effort and includes current and historical glider missions dating back to 2005 from <a href="http://www.ioos.noaa.gov/regions/gcoos.html" target="_blank">Gulf of Mexico</a> (GCOOS), <a href="http://www.ioos.noaa.gov/regions/sccoos.html" target="_blank">Southern California</a> (SCCOOS), <a href="http://www.ioos.noaa.gov/regions/nanoos.html" target="_blank">Northern Pacific</a> (NANOOS), <a href="http://www.ioos.noaa.gov/regions/cencoos.html" target="_blank">Central and Northern California</a> (CeNCOOS), <a href="http://www.ioos.noaa.gov/regions/glos.html" target="_blank">Great Lakes</a> (GLOS), <a href="http://www.ioos.noaa.gov/regions/maracoos.html" target="_blank">Mid-Atlantic</a> (MARACOOS) and the <a href="http://www.aoml.noaa.gov/" target="_blank">Atlantic Oceanographic and Meteorological Lab</a> (AOML). The gliders displayed have been funded by U.S. IOOS, NOAA, ONR, NSF, EPA, various universities, state agencies and industries.
+        </p>
       </div> <!-- caption -->
     </div> <!-- col -->
   </div> <!-- row -->
   <hr>
   <div class="row">
-    <div class="col-md-12" id='infographic'>
-      <script id="infogram_0_2008-2012-8694941" src="//e.infogr.am/js/embed.js" type="text/javascript"></script>
-    </div> <!-- infographic -->
+    <div class="col-md-12">
+        <a href="http://dev.oceansmap.com/gliders/catalog/" target="_blank">
+          <img src="{{url_for('static', filename='img/ioos-map-screen-capture.png')}}" alt="IOOS Gliders Map screen capture" class="img-responsive"></img>
+        </a>
+    </div>
   </div> <!-- row -->
   <hr>
   <div class="row">
@@ -84,53 +52,121 @@
   </div>
   <div class="row">
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>General Info</h3>
-          <ul>
-            <li><a href="http://www.ioos.noaa.gov/glider/welcome.html" target="_blank">IOOS Gliders Homepage</a></li>
-            <li><a href="http://www.ioos.noaa.gov/glider/strategy/natl_glider_ntwrk_plan_final.pdf" target="_blank">White paper</a></li>
-            <li><a href="#">Glider Task Team</a></li>
-            <li><a href="#">Benefits of contributing</a></li>
-          </ul>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Info</a>
+            <ul id="menu1" class="dropdown-menu" aria-labelledby="drop1">
+              <li>
+                <a href="http://www.ioos.noaa.gov/glider/welcome.html" target="_blank">IOOS Gliders Homepage</a>
+                <p>
+                  Summary of IOOS glider and AUV activities
+                </p>
+              </li>
+              <li role="separator" class="divider"><li>
+              <li>
+                <a href="http://www.iooc.us/activities/glider-tt/" target="_blank">IOOC Glider Task Team</a>
+                <p>
+                  The goals of the Interagency Ocean Observation Committee (IOOC) Glider Task Team are to enable increased engagement with the glider community and to advance the coordinated use of glider observing systems to meet global, national and regional sub-surface observing requirements.
+                <p/>
+              </li>
+              <li role="separator" class="divider"><li>
+              <li>
+                <a href="/benefits">IOOS GliderDAC Benefits</a>
+                <p>
+                  The Glider DAC provides a number of benefits to glider operators to improve their experience with their glider data including data distribution, quality assurance, and visualization.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Data Visualization &amp; Access</h3>
-          <ul>
-            <li><a href="">Glider Map</a></li>
-            <li><a href="http://data.ioos.us/gliders/erddap/index.html" target="_blank">ERDDAP</a></li>
-            <li><a href="http://data.ioos.us/gliders/thredds/catalog.html" target="_blank">THREDDS</a></li>
-            <li><a href="http://data.nodc.noaa.gov/geoportal/rest/find/document?searchText=NGDAC&start=1&max=25&contentOption=intersecting&f=searchPage&dojo.preventCache=1452007401768" target="_blank">NCEI Archive</a></li>
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+        <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Visualization &amp; Access</a>
+          <ul id="menu2" class="dropdown-menu" aria-labelledby="drop2">
+            <li>
+              <a href="/metrics">Glider Metrics</a>
+              <p>
+                Infographic depicting the number of glider datas per regional association from 2008 to 2014
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://data.ioos.us/gliders/erddap/index.html" target="_blank">ERDDAP Catalog</a>
+              <p>
+                The ERDDAP Catalog provides direct access to all GliderDAC datasets and allows users to make maps and graphs.
+              <p/>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://data.ioos.us/gliders/thredds/catalog.html" target="_blank">THREDDS Catalog</a>
+              <p>
+                The THREDDS catalog provide direct access to all GliderDAC datasets via DAP requests.
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://data.nodc.noaa.gov/geoportal/rest/find/document?searchText=NGDAC&start=1&max=25&contentOption=intersecting&f=searchPage&dojo.preventCache=1452007401768" target="_blank">NCEI Glider Archive Data</a>
+              <p>
+                NCEI archives data and metadata independently of the original data providers so that it is available for use by future users.
+              </p>
+            </li>
           </ul>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+        </li>
+      </ul>
+    </div>
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Documentation</h3>
-          <ul>
-            <li><a href="https://github.com/ioos/ioosngdac/wiki" target="_blank">GliderDAC Wiki</a></li>
-            <li><a href="#">NCEI SIF</a></li>
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+        <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+          <ul id="menu3" class="dropdown-menu" aria-labelledby="drop3">
+            <li>
+              <a href="http://www.ioos.noaa.gov/glider/strategy/natl_glider_ntwrk_plan_final.pdf" target="_blank">IOOS Underwater Glider Network Plan</a>
+              <p>
+                Strategy for using underwater gliders as part of a larger comprehensive three dimensional ocean, coastal, and Great Lakes observing system.
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="https://github.com/ioos/ioosngdac/wiki" target="_blank">IOOS National Glider DAC Wiki</a>
+              <p>
+                A collection of documents and resources describing the NetCDF file specification, data provider registration and data set submission processes for contributing glider data sets to the GliderDAC.
+              <p/>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="#">NECI Submission Information Form for the IOOS National Glider Data Assembly Center</a>
+              <p>
+                Describes process used to establish archiving of GliderDAC data with NCEI
+              </p>
+            </li>
           </ul>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+        </li>
+      </ul>
+    </div>
     <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Data Providers</h3>
-          <ul>
-            <li><a href="http://data.ioos.us/compliance" target="_blank">Compliance Checker</a></li>
-            <li><a href="http://data.ioos.us/gliders/status/" target="_blank">Status</a></li>
+      <ul class="nav nav-pills glider-resources">
+        <li role="presentation" class="dropdown">
+        <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Provider Tools</a>
+          <ul id="menu4" class="dropdown-menu" aria-labelledby="drop4">
+            <li>
+              <a href="http://data.ioos.us/compliance" target="_blank">IOOS Compliance Checker</a>
+              <p>
+                Web-based tool to check local or remote datasets for compliance against a variety of standards, including the IOOS GliderDAC
+              </p>
+            </li>
+            <li role="separator" class="divider"><li>
+            <li>
+              <a href="http://gliders.ioos.us/status" target="_blank">GliderDAC Submission Status Page</a>
+              <p>
+                Web-based tool for tracking the submission of glider data to the GliderDAC.  Provides summary of deployments, WMO IDs, number of profiles, time coverage, and data availability through ERDDAP and THREDDS.
+              <p/>
+            </li>
           </ul>
-        </div> <!-- caption -->
-      </div> <!-- thumbnail -->
-    </div> <!-- col -->
+        </li>
+      </ul>
+    </div>
   </div> <!-- row -->
 </div>
 {% endblock %}
