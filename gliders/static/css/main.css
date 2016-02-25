@@ -1,3 +1,11 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: #fff url("/img/ocean.jpg") no-repeat bottom center;
+}
+
 @font-face {
   font-family: 'KlinicSlabBold';
   src: url("/css/fonts/KlinicSlabBold.otf") format("opentype");
@@ -48,10 +56,10 @@ header > .container-fluid {
 }
 
 .navbar-default .navbar-nav .dropdown-menu li a {
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.dropdown-menu > li > a:hover {
+header .dropdown-menu > li > a:hover {
   background-color: #021A47;
 }
 
@@ -59,22 +67,16 @@ header > .container-fluid {
   border: none;
 }
 
-#navbar {
-  font-family: "KlinicSlabMedium";
-  font-size: 24px;
-  color: #007396;
+#navbar .navbar-nav > li > a {
+  font-size: 1.2em;
+  text-transform: uppercase;
   margin-top: 1px;
 }
 
 #navbar a {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #55D6F8;
 }
-
-/*
-#navbar-links a:hover {
-  color:#003087;
-}
-*/
 
 .bad-score {
   color: #D70834;
@@ -169,51 +171,51 @@ thead .ccorrection {
   padding-top: 15px;
 }
 
-#main-container .row .col-md-3.welcome {
+#main-container.homepage .row .col-md-3.welcome {
   margin-top: 22px;
 }
 
 @media (max-width: 992px) {
-  #main-container .row .col-md-3.welcome {
+  #main-container.homepage .row .col-md-3.welcome {
     margin-top: 0;
   }
 }
 
-#main-container .row .thumbnail .caption h3 {
+#main-container.homepage .row .thumbnail .caption h3 {
   margin-top    : 5px;
   margin-bottom : 15px;
 }
 
-#main-container .row .section-heading h1 {
+#main-container.homepage .row .section-heading h1 {
   margin-bottom: 25px;
 }
 
-#main-container .thumbnail .caption .list-group:last-of-type {
+#main-container.homepage .thumbnail .caption .list-group:last-of-type {
   margin-bottom: 5px;
 }
 
-#main-container .thumbnail img[alt="IOOS Gliders Map screen capture"] {
+#main-container.homepage .thumbnail img[alt="IOOS Gliders Map screen capture"] {
   max-width: 1140px;
 }
 
-#main-container ul.glider-resources.nav-pills > li {
+#main-container.homepage ul.glider-resources.nav-pills > li {
   width: 100%;
 }
 
-#main-container ul.glider-resources.nav-pills > li > a {
+#main-container.homepage ul.glider-resources.nav-pills > li > a {
   font-size : 18px;
   border    : 1px solid #ccc;
 }
 
-#main-container ul.glider-resources.nav-pills li.dropdown.open > ul {
+#main-container.homepage ul.glider-resources.nav-pills li.dropdown.open > ul {
   width: 100%;
 }
 
-#main-container ul.glider-resources.nav-pills li.dropdown.open > ul > li > a {
+#main-container.homepage ul.glider-resources.nav-pills li.dropdown.open > ul > li > a {
   white-space : normal;
 }
 
-#main-container ul.glider-resources.nav-pills li.dropdown.open > ul li p {
+#main-container.homepage ul.glider-resources.nav-pills li.dropdown.open > ul li p {
   font-size   : 12px;
   margin-left : 39px;
   color       : #868686;
@@ -221,6 +223,11 @@ thead .ccorrection {
   margin-right: 18px;
 }
 
-#main-container .row:last-of-type {
+#main-container.homepage .row:last-of-type {
   margin-bottom: 500px;
+}
+
+img[src="/static/img/glider.jpg"] {
+  margin-left : 30px;
+  margin-top  : 25px;
 }
