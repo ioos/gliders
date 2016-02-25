@@ -232,3 +232,8 @@ thead .ccorrection {
 #main-container.homepage .row:last-of-type {
   margin-bottom: 500px;
 }
+
+img[src="/static/img/glider.jpg"] {
+  margin-left : 30px;
+  margin-top  : 25px;
+}
