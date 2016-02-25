@@ -4,6 +4,7 @@ html {
 
 body {
   background: #fff url("/img/ocean.jpg") no-repeat bottom center;
+  min-height: 1115px;
 }
 
 @font-face {
