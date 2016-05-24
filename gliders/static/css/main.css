@@ -284,24 +284,30 @@ img[src="/static/img/glider.jpg"] {
 }
 
 div#helper-overlay {
-    position: absolute;
-    height          : 100%;
-    width           : 100%;
-    background-color: #000;
-    opacity         : 0;
-    padding-top     : 28%;
-    transition      : opacity 0.4s ease-in-out;
-  }
+  position: absolute;
+  height          : 100%;
+  width           : 100%;
+  background-color: #000;
+  opacity         : 0;
+  padding-top     : 28%;
+  transition      : opacity 0.4s ease-in-out;
+}
 
-  div#helper-overlay p {
-    color         : #fff;
-    font-size     : 62px;
-    text-transform: uppercase;
-    font-style    : italic;
-    font-weight   : bold;
-    text-align    : center;
-  }
+div#helper-overlay p {
+  color         : #fff;
+  font-size     : 62px;
+  text-transform: uppercase;
+  font-style    : italic;
+  font-weight   : bold;
+  text-align    : center;
+}
 
 div#helper-overlay:hover {
   opacity: 0.5;
 }
+
+.glider-resources #menu3{
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
