@@ -1,6 +1,9 @@
 # gliders
 The front page / home page for IOOS National Glider DAC
 
+Please do not file issues here,  all GliderDAC related issues should be filed in the [IOOS National Glider Data Assembly Center (V2)](OOS National Glider Data Assembly Center (V2)) repository.
+
+
 # Installation
 
 1. Download and install nodeJS (should come with npm)
