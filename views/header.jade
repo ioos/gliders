@@ -1,0 +1,63 @@
+header
+  .container-fluid
+    a(href="//ioos.us")
+      img(src="/images/IOOS_Emblem_Tertiary_B_RGB.png")
+  nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="//ioos.us")
+          img(alt="IOOS logo", src="/images/logo-navbar.png")
+      #navbar.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.brand
+            a(href="//ioos.us")
+              img(alt="IOOS logo", src="/images/logo-navbar.png")
+          li.dropdown
+            a#drop1.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
+              | Data
+              span.caret
+            ul.dropdown-menu(aria-labelledby="drop1")
+              li
+                a(href="#") Metrics
+              li
+                a(href="//data.ioos.us") Search
+              li
+                a(href="//data.ioos.us/compliance", target="_blank") Compliance Checker
+          li.dropdown
+            a#drop2.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
+              | Data
+              span.caret
+            ul.dropdown-menu(aria-labelledby="drop2")
+              li
+                a(href="//comt.ioos.us", target="_blank") COMT
+              li
+                a(href="http://axiomdatascience.com/maps/ioos", target="_blank") Sensor Map
+              li
+                a(href="//eds.ioos.us", target="_blank") EDS Viewer
+          li.dropdown
+            a#drop3.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
+              | DACs
+              span.caret
+            ul.dropdown-menu(aria-labelledby="drop3")
+              li
+                a(href="/", target="_blank") Glider DAC
+              li
+                a(href="#", target="_blank") HF Radar DAC
+              li
+                a(href="#", target="_blank") ATN DAC
+          li
+            a(href="#") Regional Associations
+          li.dropdown
+            a#drop4.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
+              | About
+              span.caret
+            ul.dropdown-menu(aria-labelledby="drop4")
+              li
+                a(href="#", target="_blank") Documents
+              li
+                a(href="#", target="_blank") Contact Us

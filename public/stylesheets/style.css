@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: #fff url("/img/ocean.jpg") no-repeat bottom center;
+  background: #fff url("/images/ocean.jpg") no-repeat bottom center;
   min-height: 1115px;
 }
 
@@ -37,7 +37,7 @@ header > .container-fluid {
   border-radius: 0;
 }
 
-.navbar img[src="/img/logo-navbar.png"] {
+.navbar img[src="/images/logo-navbar.png"] {
   max-height: 42px;
   margin-top: -11px;
 }
@@ -119,7 +119,7 @@ header .dropdown-menu > li > a:hover {
     display: inline-block;
   }
 
-  .navbar img[src="/img/logo-navbar.png"] {
+  .navbar img[src="/images/logo-navbar.png"] {
     margin-top: -6px;
   }
 }
@@ -278,7 +278,7 @@ thead .ccorrection {
   margin-bottom: 500px;
 }
 
-img[src="/static/img/glider.jpg"] {
+img[src="/images/glider.jpg"] {
   margin-left : 30px;
   margin-top  : 25px;
 }
@@ -310,4 +310,5 @@ div#helper-overlay:hover {
   max-height: 300px;
   overflow-y: scroll;
 }
+
 
