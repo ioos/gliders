@@ -1,0 +1,185 @@
+extends layout
+
+block content
+  include header.jade
+  #main-container.homepage.container
+    .row
+      .col-md-3.welcome
+        .rounded-shadow
+          a(href="//www.ioos.noaa.gov/glider/welcome.html")
+            img(src="/images/flying_glider.jpg", alt="IOOS Gliders")
+      .col-md-9
+        .caption.caption-header
+          h3 IOOS Glider DAC
+          p.
+            The mission of the Glider DAC is to provide glider operators with a
+            simple process for submitting  glider data sets to a centralized
+            location, enabling the data to be visualized, analyzed, widely
+            distributed via existing web services and the Global
+            Telecommunications System (GTS) and archived at the National
+            Centers for Environmental Information (NCEI).
+
+          p
+            | As scientists deploy more gliders, they are revolutionizing how we
+            | observe our ocean. This data creates a more complete picture of
+            | what is happening in the ocean, especially below the surface. The
+            | robots collect information by profiling the water from the surface
+            | to deep water, at lower cost and less risk than ever before.
+            | Currently, the IOOS Regional Associations (RAs), which conduct a
+            | combination of routine, sustained, and event driven monitoring, are
+            | the main contributors to the IOOS glider DAC.  The IOOS Underwater
+            | Glider Network Map is a collaborative effort and includes current
+            | and historical glider missions dating back to 2005 from 
+
+            a(href="http://gcoos.tamu.edu/", target="_blank")
+              |  Gulf of Mexico
+            |  (GCOOS),
+
+            a(href="http://sccoos.org/" , target="_blank")
+              |  Southern California
+            |  (SCCOOS),
+
+            a(href="http://nanoos.org/" , target="_blank")
+              |  Northern Pacific
+            |  (NANOOS),
+
+            a(href="http://cencoos.org/" , target="_blank")
+              |  Central and Northern California
+            |  (CeNCOOS),
+
+            a(href="http://glos.us/" , target="_blank")
+              |  Great Lakes
+            |  (GLOS),
+
+            a(href="http://maracoos.org/" , target="_blank")
+              |  Mid-Atlantic
+            |  (MARACOOS), and the
+
+            a(href="http://www.aoml.noaa.gov/", target="_blank")
+              |  Atlantic Oceanographic and Meteorological Lab
+
+            |  (AOML). The gliders displayed have been funded by U.S. IOOS, NOAA,
+            | ONR, NSF, EPA, various universities, state agencies and industries.
+    .row
+      .col-md-12
+        a(href="http://gliders.ioos.us/map/", target="_blank")
+          #helper-overlay
+            p Click here to see the map
+          img.img-responsive(src="/images/ioos-map-screen-capture.png", alt="IOOS Gliders Map screen capture")
+    .row
+      .section-heading
+        h1 Glider Resources
+    .row
+      .col-sm-6.col-md-3
+        ul.nav.nav-pills.glider-resources
+          li.dropdown(role="presentation")
+            a#drop1.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+              | General Info
+            ul#menu1.dropdown-menu(aria-labelledby="drop1")
+              li
+                a(href="http://www.ioos.noaa.gov/glider/welcome.html", target="_blank") IOOS Gliders Homepage
+                p Summary of IOOS glider and AUV activities
+              li.divider(role="separator")
+              li
+                a(href="http://www.iooc.us/activities/task-teams/glider-tt/", target="_blank")
+                  | IOOC Glider Task Team
+                p.
+                  The goals of the Interagency Ocean Observation Committee
+                  (IOOC) Glider Task Team are to enable increased engagement
+                  with the glider community and to advance the coordinated use
+                  of glider observing systems to meet global, national and
+                  regional sub-surface observing requirements.
+              li.divider(role="separator")
+              li
+                a(href="/benefits") IOOS GliderDAC Benefits
+                p.
+                  The Glider DAC provides a number of benefits to glider
+                  operators to improve their experience with their glider data
+                  including data distribution, quality assurance, and
+                  visualization\.
+      .col-sm-6.col-md-3
+        ul.nav.nav-pills.glider-resources
+          li.dropdown(role="presentation")
+            a#drop2.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+              | Data Visualization &amp; Access
+            ul#menu2.dropdown-menu(aria-labelledby="drop2")
+              li
+                a(href="/metrics") Glider Metrics
+                p.
+                  Infographic depicting the number of glider datas per regional
+                  association from 2008 to 2014
+              li.divider(role="separator")
+              li
+                a(href="http://data.ioos.us/gliders/erddap/index.html", target="_blank") ERDDAP Catalog
+                p.
+                  The ERDDAP Catalog provides direct access to all GliderDAC
+                  datasets and allows users to make maps and graphs.
+              li.divider(role="separator")
+              li
+                a(href="http://data.nodc.noaa.gov/geoportal/rest/find/document?searchText=NGDAC&start=1&max=25&contentOption=intersecting&f=searchPage&dojo.preventCache=1452007401768", target="_blank") NCEI Glider Archive Data
+                p.
+                  NCEI archives data and metadata independently of the original
+                  data providers so that it is available for use by future
+                  users.
+
+      .col-sm-6.col-md-3
+        ul.nav.nav-pills.glider-resources
+          li.dropdown(role="presentation")
+            a#drop3.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+              | Documentation
+            ul#menu3.dropdown-menu(aria-labelledby="drop3")
+              li
+                a(href="/static/pdf/Manual-for-QC-of-Glider-Data_05_09_16.pdf", target="_blank").
+                  Manual for Quality Control of Temperature and Salinity Data
+                  Observations from Gliders
+                p.
+                  This manual describes the tests required to ensure the
+                  quality control (QC) of real-time data collected by sensors
+                  attached to profiling gliders.
+              li.divider(role="separator")
+              li
+                a(href="https://github.com/ioos/ioosngdac/wiki", target="_blank").
+                  IOOS National Glider DAC Wiki
+                p.
+                  A collection of documents and resources describing the NetCDF
+                  file specification, data provider registration and data set
+                  submission processes for contributing glider data sets to the
+                  GliderDAC\.
+              li.divider(role="separator")
+              li
+                a(href="/static/pdf/IOOS_National_Glider_Data_Assembly_CenterSIF.pdf", target="_blank").
+                  NCEI Submission Information Form for the IOOS National Glider
+                  Data Assembly Center
+                p.
+                  Describes process used to establish archiving of GliderDAC data with NCEI
+              li.divider(role="separator")
+              li
+                a(href="http://www.ioos.noaa.gov/glider/strategy/natl_glider_ntwrk_plan_final.pdf", target="_blank").
+                  IOOS Underwater Glider Network Plan
+                p.
+                  Strategy for using underwater gliders as part of a larger
+                  comprehensive three dimensional ocean, coastal, and Great
+                  Lakes observing system.
+
+      .col-sm-6.col-md-3
+        ul.nav.nav-pills.glider-resources
+          li.dropdown(role="presentation")
+            a#drop4.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+              | Data Provider Tools
+            ul#menu4.dropdown-menu(aria-labelledby="drop4")
+              li
+                a(href="http://data.ioos.us/compliance", target="_blank").
+                  IOOS Compliance Checker
+                p.
+                  Web-based tool to check local or remote datasets for
+                  compliance against a variety of standards, including the IOOS
+                  GliderDAC
+              li.divider(role="separator")
+              li
+                a(href="http://gliders.ioos.us/status", target="_blank").
+                  GliderDAC Submission Status Page
+                p.
+                  Web-based tool for tracking the submission of glider data to
+                  the GliderDAC.  Provides summary of deployments, WMO IDs,
+                  number of profiles, time coverage, and data availability
+                  through ERDDAP and THREDDS.
