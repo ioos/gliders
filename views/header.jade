@@ -23,22 +23,28 @@ header
               span.caret
             ul.dropdown-menu(aria-labelledby="drop1")
               li
-                a(href="#") Metrics
+                a(href="//ioos.noaa.gov/about/ioos-by-the-numbers/") Metrics
               li
                 a(href="//data.ioos.us") Search
               li
                 a(href="//data.ioos.us/compliance", target="_blank") Compliance Checker
+              li
+                a(href="//www.nodc.noaa.gov/ioos/" target="_blank") IOOS Archive Data Portal
+              li
+                a(href="//ioos.us/comt" target="_blank") IOOS Archive Data Portal
           li.dropdown
             a#drop2.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
-              | Data
+              | Viewers
               span.caret
             ul.dropdown-menu(aria-labelledby="drop2")
               li
                 a(href="//comt.ioos.us", target="_blank") COMT
               li
-                a(href="http://axiomdatascience.com/maps/ioos", target="_blank") Sensor Map
+                a(href="//sensors.ioos.us/", target="_blank") Sensor Map
               li
-                a(href="//eds.ioos.us", target="_blank") EDS Viewer
+                a(href="//eds.ioos.us", target="_blank") EDS Model Viewer
+              li
+                a(href="//gliders.ioos.us", target="_blank") Profiling Gliders
           li.dropdown
             a#drop3.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
               | DACs
@@ -49,15 +55,38 @@ header
               li
                 a(href="//hfradar.ioos.us/", target="_blank") HF Radar DAC
               li
-                a(href="http://oceanview.pfeg.noaa.gov/ATN/", target="_blank") ATN DAC
-          li
-            a(href="#") Regional Associations
+                a(href="//oceanview.pfeg.noaa.gov/ATN/", target="_blank") ATN DAC
+          li.dropdown
+            a#drop3.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
+              | Regional Associations
+              span.caret
+            ul.dropdown-menu(aria-labelledby="drop5")
+              li
+                a(href="//ioos.us/regions") IOOS Region Map
+              li
+                a(href="//portal.aoos.org/", target="_blank") Alaska – AOOS
+              li
+                a(href="//www.caricoos.org/drupal/", target="_blank") Central and Northern California – CeNCOOS
+              li
+                a(href="//glos.us/", target="_blank") Great Lakes – GLOS
+              li
+                a(href="//data.gcoos.org/", target="_blank") Gulf of Mexico – GCOOS
+              li
+                a(href="//maracoos.org/", target="_blank") Mid-Atlantic – MARACOO
+              li
+                a(href="//neracoos.org/realtime_map", target="_blank") Northeast Atlantic – NERACOOS
+              li
+                a(href="//oos.soest.hawaii.edu/pacioos/voyager/", target="_blank") Pacific Islands – PacIOOS
+              li
+                a(href="//nvs.nanoos.org/", target="_blank") Pacific Northwest – NANOOS
+              li
+                a(href="//portal.secoora.org/", target="_blank") Southeast Atlantic – SECOORA
+              li
+                a(href="//www.sccoos.org/data/overview/", target="_blank") Southern California – SCCOOS
           li.dropdown
             a#drop4.dropdown-toggle(href="#", data-toggle="dropdown", role="button",  aria-haspopup="true", aria-expanded="false")
               | About
               span.caret
             ul.dropdown-menu(aria-labelledby="drop4")
               li
-                a(href="#", target="_blank") Documents
-              li
-                a(href="#", target="_blank") Contact Us
+                a(href="//ioos.us/contact-us", target="_blank") Contact Us
