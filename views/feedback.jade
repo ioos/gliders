@@ -1,0 +1,22 @@
+a(href='', id='feedback', class='hidden-xs')
+div(id='feedbackForm', class='modal fade', tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                button(type='button', class='close', data-dismiss='modal', aria-hidden='true') &times;
+                h4.modal-title Submit site feedback
+            div.modal-body
+                div.well
+                    div.form-group.has-feedback
+                        textarea(id='feedback-comment' class='form-control', rows='6', placeholder='Comment or suggestion (required)', maxlength=500, aria-describedby='inputError2Status')
+                        span(class='glyphicon glyphicon-remove form-control-feedback', aria-hidden='true')
+                div.well
+                    div.form-group.has-feedback
+                        input(id='feedback-name', class='form-control', type='text', placeholder='Your name', maxlength=50, aria-describedby='inputError2Status')
+                        span(class='glyphicon glyphicon-remove form-control-feedback', aria-hidden='true')
+                div.well
+                    div.form-group.has-feedback
+                        input(id='feedback-email', class='form-control', type='email', placeholder='Your e-mail address', aria-describedby='inputError2Status')
+                        span(class='glyphicon glyphicon-remove form-control-feedback', aria-hidden='true')
+            div.modal-footer
+                input(type='submit', class='btn btn-primary', value='Submit')
