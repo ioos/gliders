@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: #fff url("/images/ocean.jpg") no-repeat bottom center;
+  background: #fff url("/data/images/ocean.jpg") no-repeat bottom center;
   min-height: 1115px;
 }
 
@@ -37,7 +37,7 @@ header > .container-fluid {
   border-radius: 0;
 }
 
-.navbar img[src="/images/logo-navbar.png"] {
+.navbar img[src="/data/images/logo-navbar.png"] {
   max-height: 42px;
   margin-top: -11px;
 }
@@ -119,7 +119,7 @@ header .dropdown-menu > li > a:hover {
     display: inline-block;
   }
 
-  .navbar img[src="/images/logo-navbar.png"] {
+  .navbar img[src="/data/images/logo-navbar.png"] {
     margin-top: -6px;
   }
 }
@@ -278,7 +278,7 @@ thead .ccorrection {
   margin-bottom: 500px;
 }
 
-img[src="/images/glider.jpg"] {
+img[src="/data/images/glider.jpg"] {
   margin-left : 30px;
   margin-top  : 25px;
 }
@@ -313,7 +313,7 @@ div#helper-overlay:hover {
 
 #feedback{
 	border:0px solid #fff;
-	background:#660000 url('/images/feedback-tab-left.png') top left no-repeat;
+	background:#660000 url('/data/images/feedback-tab-left.png') top left no-repeat;
 	width:36px;
 	height:100px;
 	position:fixed;

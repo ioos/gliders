@@ -3,20 +3,22 @@ html
   head
     meta(charset="UTF-8")
     title= title
-    link(rel="shortcut icon", href="/images/favicon.ico?v=2")
+    link(rel="shortcut icon", href="/data/images/favicon.ico?v=2")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="IOOS Compliance Checker")
+    meta(name="description", content="IOOS GliderDAC")
     meta(name="author", content="IOOS")
-    link(rel="stylesheet", href="/lib/bootstrap/dist/css/bootstrap.css")
-    link(rel="stylesheet", href="/lib/font-awesome/css/font-awesome.css")
-    link(rel="stylesheet", href="/stylesheets/infographic.css")
+    meta(name="url-root" content="/data")
+    base(href="/data/")
+    link(rel="stylesheet", href="/data/lib/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet", href="/data/lib/font-awesome/css/font-awesome.css")
+    link(rel="stylesheet", href="/data/stylesheets/infographic.css")
     link(href="https://fonts.googleapis.com/css?family=Roboto", rel="stylesheet", type="text/css")
-    link(rel="stylesheet", href="/stylesheets/style.css")
-    script(src="/lib/jquery/dist/jquery.js")
-    script(src="/lib/bootstrap/dist/js/bootstrap.js")
-    script(src="/lib/underscore/underscore.js")
-    script(src="/js/feedback.js")
+    link(rel="stylesheet", href="/data/stylesheets/style.css")
+    script(src="/data/lib/jquery/dist/jquery.js")
+    script(src="/data/lib/bootstrap/dist/js/bootstrap.js")
+    script(src="/data/lib/underscore/underscore.js")
+    script(src="/data/js/feedback.js")
   body
     block content
     include ./feedback.jade
