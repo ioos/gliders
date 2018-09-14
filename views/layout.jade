@@ -19,6 +19,17 @@ html
     script(src="/data/lib/bootstrap/dist/js/bootstrap.js")
     script(src="/data/lib/underscore/underscore.js")
     script(src="/data/js/feedback.js")
+    // Google Analytics
+    if GOOGLE_ANALYTICS_ID
+        script(src="https://www.googletagmanager.com/gtag/js?id=" + "#{GOOGLE_ANALYTICS_ID}")
+
+    script.
+        if ("#{GOOGLE_ANALYTICS_ID}") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', "#{GOOGLE_ANALYTICS_ID}");
+        }
   body
     block content
     include ./feedback.jade
