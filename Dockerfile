@@ -10,6 +10,8 @@ RUN useradd -m node
 
 COPY contrib/scripts/ $SCRIPTS_DIR/
 
+RUN sed -i '/jessie-updates/d' /etc/apt/sources.list  # Now archived
+
 RUN $SCRIPTS_DIR/install-deps.sh
 RUN $SCRIPTS_DIR/install-node.sh
 COPY bin /opt/gliders/bin
