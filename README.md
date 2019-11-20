@@ -38,8 +38,17 @@ Please do not file issues here,  all GliderDAC related issues should be filed in
     ```
     bin/www
     ```
+7. Accessing via localhost in browser:(Use data subdirectory)
+  ```
+    http://localhost:3003/data
+  ```
+Replace 3003 with your configured port.
 
 # Developing
+
+## Deployed files:
+gliders.ioos.us is the wordpress site
+gliders.ioos.us/data is this repo.
 
 Most of this project are static files. The initial pages are loaded as jade
 templates.  
