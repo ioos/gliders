@@ -16,6 +16,6 @@ else
   image_release_tag="${TRAVIS_TAG:-latest}"
 
   echo "Tagging image with: $image_release_tag"
-  docker tag `"gliders:latest" "ioos/gliders:$image_release_tag"
-  docker push "ioos/gliders:$image_relase_tag"
+  docker tag gliders:latest ioos/gliders:$image_release_tag
+  docker push ioos/gliders
 fi

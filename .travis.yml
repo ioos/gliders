@@ -21,3 +21,4 @@ deploy:
   on:
     repo: ioos/gliders
     branch: master
+    tags: true
