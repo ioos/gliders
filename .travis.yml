@@ -17,7 +17,7 @@ script:
 - docker run -d -p 3000:3000 gliders
 deploy:
   provider: script
-  script: "$TRAVIS_BUILD_DIR/scripts/docker_push.sh"
+  script: bash "$TRAVIS_BUILD_DIR/scripts/docker_push.sh"
   on:
     repo: ioos/gliders
     branch: master
