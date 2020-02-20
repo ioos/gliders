@@ -8,18 +8,6 @@ Please do not file issues here,  all GliderDAC related issues should be filed in
 
 0. Download and install nodeJS (should come with npm)
 0. Install `yarn` using your package manager. Instructions can be found [here](https://legacy.yarnpkg.com/en/docs/install/).
-   
-   ```
-   npm install -g bower
-   ```
-
-   _You may need to run as sudo_
-
-0. Install grunt
-
-   ```
-   npm install -g grunt-cli
-   ```
 
 0. Use `yarn` to build the project dependencies
 
