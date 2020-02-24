@@ -20,5 +20,5 @@ deploy:
   script: bash "$TRAVIS_BUILD_DIR/scripts/docker_push.sh"
   on:
     repo: ioos/gliders
-    branch: master
+    branch: production
     tags: true
