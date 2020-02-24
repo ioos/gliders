@@ -6,43 +6,37 @@ Please do not file issues here,  all GliderDAC related issues should be filed in
 
 # Installation
 
-1. Download and install nodeJS (should come with npm)
-2. Install bower
-   
-   ```
-   npm install -g bower
-   ```
+0. Download and install nodeJS (should come with npm)
+0. Install `yarn` using your package manager. Instructions can be found [here](https://legacy.yarnpkg.com/en/docs/install/).
 
-   _You may need to run as sudo_
-
-3. Install grunt
+0. Use `yarn` to build the project dependencies
 
    ```
-   npm install -g grunt-cli
+   yarn
    ```
 
-4. Use node to build the project dependencies
-
-   ```
-   npm install
-   ```
-
-5. Use bower to install the UI depencies
-
-   ```
-   bower install
-   ```
-
-6. Run the project
+0. Run the project
 
     ```
-    bin/www
+    node bin/www
     ```
-7. Accessing via localhost in browser:(Use data subdirectory)
+
+0. Accessing via localhost in browser:
   ```
-    http://localhost:3003/data
+    http://localhost:3000
   ```
-Replace 3003 with your configured port.
+
+# Docker build
+
+The Docker build is far simpler:
+
+```
+$ docker build -t <tag> -f Dockerfile .
+```
+
+__NOTE__: ensure that `public/lib` is removed *before* building. If it exists,
+`yarn` will attempt to use the existing one in the Docker build, breaking the symlink
+in the container and lead to ugly CSS.
 
 # Developing
 
