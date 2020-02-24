@@ -1,0 +1,24 @@
+os: linux
+dist: xenial
+language: node_js
+node_js:
+- 10.6.0
+services:
+- docker
+before_install:
+- docker pull node:13.7.0-alpine
+jobs:
+  fast_finish: true
+  include:
+  - language: node_js
+install:
+- docker build -t gliders . --no-cache
+script:
+- docker run -d -p 3000:3000 gliders
+deploy:
+  provider: script
+  script: bash "$TRAVIS_BUILD_DIR/scripts/docker_push.sh"
+  on:
+    repo: ioos/gliders
+    branch: production
+    tags: true
